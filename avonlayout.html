@@ -1,123 +1,126 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="resetcss/reset.css">
+
+<head>
+	<link rel="stylesheet" href="resetcss/reset.css">
 	<style>
-	*{
-		margin:0;
-		padding:0;
-	}
-	.Quickpay{
-		background-color:#000;
-		color:white;
-		width:100%;
-		height:34px;
-		text-align:center;
-		padding-top:8px;
-	}
-	.broucher{
-		margin-top:15px;
-	}
-	.representive{
-		float:left;
-		width:70%;
-		text-align:center;
-	}
-	.signin{
-		float:right;
-		margin-right:75px;
-	}
-	.signin a{
-		text-decoration:none;
-		color:black;
-		margin:10px;
-	}
-	.title{
-		margin-top:20px;
-	}
-	.beauty{
-		float:left;
-		width:40%;
-		text-align:center;
-		margin-left:15px;
-	}
-	.clearer{
-		clear:both;
-	}
-	.nav-ul{
-			background-color:white;
-			text-align:center;
-			border-bottom:10px double red;
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
 		}
-		.nav-ul li{
-			display:inline-block;
-			padding:10px 15px;
+
+		.quickpay {
+			background-color: #000;
+			color: white;
+			text-align: center;
+			font-size: 12px;
+			text-transform: uppercase;
+			padding: 8px 0;
 		}
-		.nav-ul li a{
-			color:black;
-			text-decoration:none;
-			font-size:18px;
+
+		.broucher {
+			/* border: 1px solid black; */
+			margin: auto;
+			width: 80%;
+			font-size: 13px;
+			padding: 10px 0;
 		}
-		.nav-ul li a:hover{
-			color:pink;
+
+		.title {
+			margin: auto;
+			width: 80%;
+			/* border: 1px solid black; */
+			padding: 15px 0;
+			text-align: center;
+			position: relative;
 		}
-		.submenu{
-			position:absolute;
-			top:70px;
-			background-color:orange;
+
+		.representive {
+			float: left;
 		}
-		.submenu li{
-			display:none; 
+
+		.signin {
+			float: right;
+		}
+
+		.signin a {
+			margin-left: 10px;
+			text-decoration: none;
+			color: black;
+		}
+
+		.beauty {
+			position: absolute;
+			top: 20px;
+			left: 30px;
+		}
+
+		.clearer {
+			clear: both;
+		}
+
+		.nav-ul {
+			margin: auto;
+			width: 80%;
+			text-align: center;
+			border-bottom: 5px double black;
+		}
+
+		.nav-ul li {
+			margin: 5px 0;
+			display: inline-block;
+			padding: 10px 24px;
+		}
+
+		.nav-ul li a {
+			color: black;
+			text-decoration: none;
+			font-size: 16px;
+			text-transform: uppercase;
 		}
 	</style>
-	</head>
-	<body>
-		<header>
-			<div class="Quickpay">
-				<h1>QUICKY PAY</h1>
+</head>
+
+<body>
+	<header>
+		<div class="quickpay">
+			QuickPay
+		</div>
+		<div class="broucher">
+			<div class="representive">
+				<p>BECOME A REPRESENTATIVE / FIND A REPRESENTATIVE</p>
 			</div>
-			<div class="broucher">
-				<div class="representive">
-					<p>BECOME A REPRESENTATIVE / FIND A REPRESENTATIVE</p>
-				</div>
-				<div class="signin">
-					<a href="#">SIGN IN</a>
-					<a href="#">BROUCHER</a>
-				</div>
-				<div class="clearer">
-				</div>
-			</div>
-			<div class="title">
-				<div class="beauty">
-					<a href="#"><img src="images/beauty-for-a-purpose-1 (1).png"></a>
-				</div>	
-			
-				<a href="#"><img src="images/avon-logo (1).png"></a>
+			<div class="signin">
+				<a href="#">SIGN IN</a>
+				<a href="#">BROUCHER</a>
 			</div>
 			<div class="clearer">
 			</div>
-			<ul class="nav-ul">
-				<li><a href="#">New ARRIVALS</a>
-				<ul class="submenu">
-					<li><a href="#">CATEGORY</a></li>
-					<li><a href="#">MAKEUP</a></li>
-					<li><a href="#">FRAGANCE</a></li>
-					<li><a href="#">BATH AND BODY</a></li>
-					<li><a href="#">SKIN CARE</a></li>
-					<li><a href="#">HAIR CARE</a></li>
-				</ul>
-				</li>
-				<li><a href="#">MAKEUP</a></li>
-				<li><a href="#">FRAGRANCE</a></li>
-				<li><a href="#">BATH AND BODY</a></li>
-				<li><a href="#">SKIN CARE</a></li>
-				<li><a href="#">HAIR CARE</a></li>
-				<li><a href="#">FASHION</a></li>
-				<li><a href="#">MORE</a></li>
-				<li><a href="#">BRANDS</a></li>
-			</ul>
+		</div>
+		<div class="title">
+			<div class="beauty">
+				<a href="#"><img src="images/beauty-for-a-purpose-1 (1).png"></a>
 			</div>
-			
-		</header>
-	</body>
+
+			<a href="#"><img src="images/avon-logo (1).png"></a>
+		</div>
+		<div class="clearer">
+		</div>
+		<ul class="nav-ul">
+			<li><a href="#">New ARRIVALS</a></li>
+			<li><a href="#">MAKEUP</a></li>
+			<li><a href="#">FRAGRANCE</a></li>
+			<li><a href="#">BATH AND BODY</a></li>
+			<li><a href="#">SKIN CARE</a></li>
+			<li><a href="#">HAIR CARE</a></li>
+			<li><a href="#">FASHION</a></li>
+			<li><a href="#">MORE</a></li>
+			<li><a href="#"></a> <strong> BRANDS</strong> </a></li>
+		</ul>
+		</div>
+
+	</header>
+</body>
+
 </html>
