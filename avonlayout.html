@@ -61,6 +61,7 @@
 		}
 
 		.nav-ul {
+			position: relative;
 			margin: auto;
 			width: 80%;
 			text-align: center;
@@ -68,16 +69,108 @@
 		}
 
 		.nav-ul li {
-			margin: 5px 0;
+			margin: 15px 2px;
 			display: inline-block;
-			padding: 10px 24px;
 		}
-
 		.nav-ul li a {
 			color: black;
 			text-decoration: none;
 			font-size: 16px;
+			text-transform: uppercase;	
+		}
+		.new{
+			padding: 20px 20px;
+		}
+		.sub-menu {
+			margin: 0;
+			padding: 0;
+			background-color: white;
+			border-top: 1px solid hotpink;
+			text-align: left;
+			width: 550px;
+			display: flex;
+			box-shadow: 5px 5px 5px gray;
+			position: absolute;
+			top: 53px;
+			display: none;
+		}
+
+		.sub-menu p {
+			padding: 15px 0;
+			font-weight: bold;
+		}
+
+		.sub-menu a {
+			display: block;
+			text-decoration: none;
+			color: black;
+			font-size: 16px;
+			padding: 5px 0;
+			
+		}
+
+		.arrival {
+			float: left;
+			width: 25%;
+			/* border: 1px solid red; */
+			background-color: #CCCCCC;
+			text-align: center;
+			font-style: italic;
+		}
+
+		.category {
+			float: left;
+			width: 45%;
+			padding-left: 20px;
+			/* border: 1px solid red; */
 			text-transform: uppercase;
+		}
+
+		.category a {
+			display: block;
+			padding: none;
+			margin: none;
+			color: red;
+		}
+
+		.brand {
+			float: left;
+			width: 30%;
+			/* border: 1px solid red; */
+			padding-left: 10px;
+			text-transform: uppercase;
+		}
+
+		.clearer {
+			clear: both;
+		}
+
+		.nav-ul li:hover .sub-menu {
+			display: flex;
+		}
+
+		.fashion {
+			width: 180px;
+		}
+
+		.fashion .category {
+			width: 100%;
+		}
+
+		.brand-pics {
+			position:absolute;
+			top: 0;
+			left: -240px;
+			border: 1px solid black;
+			display: flex;
+			width: 310px;
+			flex-wrap: wrap;
+		}
+
+		.b_pic {
+			max-width: 100px;
+			height: 100px;
+			border: 1px dotted gray;
 		}
 	</style>
 </head>
@@ -108,15 +201,256 @@
 		<div class="clearer">
 		</div>
 		<ul class="nav-ul">
-			<li><a href="#">New ARRIVALS</a></li>
-			<li><a href="#">MAKEUP</a></li>
-			<li><a href="#">FRAGRANCE</a></li>
-			<li><a href="#">BATH AND BODY</a></li>
-			<li><a href="#">SKIN CARE</a></li>
-			<li><a href="#">HAIR CARE</a></li>
-			<li><a href="#">FASHION</a></li>
-			<li><a href="#">MORE</a></li>
-			<li><a href="#"></a> <strong> BRANDS</strong> </a></li>
+			<li>
+				<a class="new" href="#">New ARRIVALS</a>
+				<div class="sub-menu fashion">
+
+					<div class="category">
+						<p>Category</p>
+						<a href="#">bath and baby</a>
+						<a href="#">Eyes</a>
+						<a href="#">Face</a>
+						<a href="#">bath and baby</a>
+						<a href="#">Eyes</a>
+
+					</div>
+
+					<div class="clearer">
+
+					</div>
+			</li>
+			<li>
+				<a class="new" href="#">MAKEUP</a>
+				<div class="sub-menu">
+					<div class="arrival">
+						<p>New Arrivals</p>
+						<img src="images/make-up.png" alt="pic">
+					</div>
+					<div class="category">
+						<p>Category</p>
+						<a href="#">Lips</a>
+						<a href="#">Eyes</a>
+						<a href="#">Face</a>
+						<a href="#">Nails</a>
+						<a href="#">Tools</a>
+						<a href="#">Blush</a>
+						<a href="#">Lip Liner</a>
+						<a href="#">Pressed Powder</a>
+						<a href="#">Kohl</a>
+						<a href="#">MakeUp Remover</a>
+						<a href="#">Concealer</a>
+						<a href="#">Dual Powder Foundation</a>
+						<a href="#">CC Creams</a>
+						<a href="#">Lip Gloss</a>
+						<a href="#">Makup Palette</a>
+						<a href="#">Lip Crayon</a>
+						<a href="#">Brushes</a>
+					</div>
+					<div class="brand">
+						<p>Brand</p>
+						<a href="#">Lips</a>
+						<a href="#">Eyes</a>
+					</div>
+					<div class="clearer">
+
+					</div>
+				</div>
+			</li>
+			<li>
+				<a class="new" href="#">FRAGRANCE</a>
+				<div class="sub-menu">
+					<div class="arrival">
+						<p>New Arrivals</p>
+						<img src="images/fragrance.png" alt="pic">
+					</div>
+					<div class="category">
+						<p>Category</p>
+						<a href="#">Lips</a>
+						<a href="#">Eyes</a>
+						<a href="#">Face</a>
+						<a href="#">Nails</a>
+						<a href="#">Tools</a>
+
+
+						<a href="#">Dual Powder Foundation</a>
+						<a href="#">CC Creams</a>
+
+
+					</div>
+					<div class="brand">
+						<p>Brand</p>
+						<a href="#">Lips</a>
+						<a href="#">Eyes</a>
+						<a href="#">Pressed Powder</a>
+						<a href="#">Kohl</a>
+						<a href="#">MakeUp Remover</a>
+						<a href="#">Concealer</a>
+						<a href="#">Blush</a>
+						<a href="#">Lip Liner</a>
+						<a href="#">Blush</a>
+						<a href="#">Lip Liner</a>
+					</div>
+					<div class="clearer">
+
+					</div>
+				</div>
+
+			</li>
+			<li>
+				<a class="new" href="#">BATH AND BODY</a>
+				<div class="sub-menu">
+					<div class="arrival">
+						<p>New Arrivals</p>
+						<img src="images/bath-and-body.png" alt="pic">
+					</div>
+					<div class="category">
+						<p>Category</p>
+						<a href="#">Lips</a>
+						<a href="#">Eyes</a>
+						<a href="#">Face</a>
+						<a href="#">Nails</a>
+						<a href="#">Tools</a>
+
+
+						<a href="#">Dual Powder Foundation</a>
+						<a href="#">CC Creams</a>
+						<a href="#">MakeUp Remover</a>
+						<a href="#">Concealer</a>
+						<a href="#">Blush</a>
+						<a href="#">MakeUp Remover</a>
+						<a href="#">Concealer</a>
+
+					</div>
+					<div class="brand">
+						<p>Brand</p>
+						<a href="#">Lips</a>
+						<a href="#">Eyes</a>
+						<a href="#">Pressed Powder</a>
+						<a href="#">Kohl</a>
+						<a href="#">MakeUp Remover</a>
+						<a href="#">Concealer</a>
+						<a href="#">Blush</a>
+						<a href="#">Lip Liner</a>
+						<a href="#">Blush</a>
+						<a href="#">Lip Liner</a>
+					</div>
+					<div class="clearer">
+
+					</div>
+				</div>
+			</li>
+			<li>
+				<a class="new" href="#">SKIN CARE</a>
+				<div class="sub-menu">
+					<div class="arrival">
+						<p>New Arrivals</p>
+						<img src="images/skincare.png" alt="pic">
+					</div>
+					<div class="category">
+						<p>Category</p>
+						<a href="#">Lips</a>
+						<a href="#">Eyes</a>
+						<a href="#">Face</a>
+						<a href="#">Nails</a>
+						<a href="#">Tools</a>
+						<a href="#">Blush</a>
+						<a href="#">Lip Liner</a>
+						<a href="#">Pressed Powder</a>
+						<a href="#">Kohl</a>
+						<a href="#">MakeUp Remover</a>
+						<a href="#">Concealer</a>
+						<a href="#">Dual Powder Foundation</a>
+						<a href="#">CC Creams</a>
+						<a href="#">Lip Gloss</a>
+						<a href="#">Makup Palette</a>
+						<a href="#">Lip Crayon</a>
+						<a href="#">Brushes</a>
+					</div>
+					<div class="brand">
+						<p>Brand</p>
+						<a href="#">Lips</a>
+						<a href="#">Eyes</a>
+						<a href="#">Makup Palette</a>
+						<a href="#">Lip Crayon</a>
+					</div>
+					<div class="clearer">
+
+					</div>
+				</div>
+			</li>
+			<li>
+				<a class="new" href="#">HAIR CARE</a>
+				<div class="sub-menu">
+					<div class="arrival">
+						<p>New Arrivals</p>
+						<img src="images/hair-care.png" alt="pic">
+					</div>
+					<div class="category">
+						<p>Category</p>
+						<a href="#">Shompo and Conditioner</a>
+						<a href="#">Eyes</a>
+						<a href="#">Face</a>
+
+					</div>
+					<div class="brand">
+						<p>Brand</p>
+
+						<a href="#">Makup Palette</a>
+						<a href="#">Lip Crayon</a>
+					</div>
+					<div class="clearer">
+
+					</div>
+				</div>
+			</li>
+			<li>
+				<a class="new" href="#">FASHION</a>
+				<div class="sub-menu fashion">
+
+					<div class="category">
+						<p>Category</p>
+						<a href="#">bath and baby</a>
+						<a href="#">Eyes</a>
+						<a href="#">Face</a>
+
+					</div>
+
+					<div class="clearer">
+
+					</div>
+			</li>
+			<li>
+				<a class="new" href="#">MORE</a>
+				<div class="sub-menu fashion">
+
+					<div class="category">
+						<p>Category</p>
+						<a href="#">bath and baby</a>
+
+
+					</div>
+
+					<div class="clearer">
+
+					</div>
+			</li>
+			<li>
+				<a href="#"> <strong> BRANDS</strong></a>
+				
+				<div class="sub-menu">
+					<div class="brand-pics">
+						<img class="b_pic" src="images/anew.png" alt="">
+						<img class="b_pic" src="images/avon-care.png" alt="">
+						<img class="b_pic" src="images/avon-color.png" alt="">
+						<img class="b_pic" src="images/avon-nutra-effects.png" alt="">
+						<img class="b_pic" src="images/avon-senses.png" alt="">
+						<img class="b_pic" src="images/avon-true-logo.png" alt="">
+						<img class="b_pic" src="images/foot-works.png" alt="">
+						<img class="b_pic" src="images/solutions.png" alt="">
+						<img class="b_pic" src="images/x-series.png" alt="">
+					</div>
+				</div>
+			</li>
 		</ul>
 		</div>
 
