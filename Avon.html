@@ -1,172 +1,311 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="resetcss/reset.css">
+
+<head>
+	<link rel="stylesheet" href="resetcss/reset.css">
 	<style>
-		.maincontainer{
-			width:100%;
-			border:2px solid red;
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
 		}
-		.Topfoot{
-			padding:15px;
-			border:1px solid black;
+
+
+		.maincontainer {
+			width: 100%;
+			/* border: 2px solid red; */
 		}
-		.lefttop{
-			float:left;
-			width:70%;
-			padding-left:150px;
+
+		.topfoot {
+			padding: 8px;
+			margin: auto;
+			/* border: 1px solid black; */
+			width: 80%;
+			display: flex;
+			align-items: center;
+			border-top: 1px solid black;
+			border-bottom: 1px solid black;
 		}
-		.righttop{
-			float:left;
-			width:30%;
+
+		.newsletter {
+			float: left;
+			width: 40%;
+			/* border: 1px solid red; */
+			/* padding-left: 150px; */
 		}
-		.clearer{
-			clear:both;
+
+		.newsletter input {
+			border-radius: 5px;
+			outline: none;
 		}
-		.text{
-			padding:10px;
-			border-radius:5px;
-			font-style:italic;
-			box-shadow:10px 0px;
+
+		input[type="text"] {
+			padding: 7px;
+			width: 100%;
+			border: 1px solid black;
+			outline: none;
+
 		}
-		.number{
-			padding:10px;
-		}
-		.button{
-			padding:10px;
-			border-radius:5px;
-			width:120px;
-			margin-left:10px;
-		}
-		*{
-		box-sizing:border-box;
-		}
-		.middlefoot{
-			margin-top:20px;
-		}
-		.leftmiddle{
-			float:left;
-			width:70%;
-		}
-		.col{
-			float:left;
-			width:33.33%;
-			padding-left:3 5px;
-			line-height:25px;
-		}
-		.col h1{
-			font-size:18px;
-			font-weight:bold;
-		}
-		.find{
-			padding:15px;
-			font-weight:bold;
-			font-style:italic;
-		}
-		.become{
-			margin-top:25px;
-		}
-		.bottomfoot{
-			margin:20px;
-		}
-		.leftfoot{
-			float:left;
-			width:80%;
-			text-align:center;
-		}
-		.leftfoot div{
-    margin:10px;
-	display:inline-block;
-}
-.rightfoot {
-    width: 20%;
-    float: left;
-	padding:10px;
-}
+
+		input[type="button"] {
+			width: 100%;
+			padding: 7px;
+			font-style: italic;
+			color: white;
+			background-color: #CCCCCC;
+			outline: none;
+			box-shadow: none;
+			border-radius: 3px;
+			border: 1px solid #CCCCCC;
 		
-	</style>
-	</head>
-	<body>
-		<div class="maincontainer">
-			<div class="Topfoot">
-				<div class="lefttop">
-					<input class="text" type="text" placeholder="Enter your email address to receive our monthly newsletter" size="60">
-					<input class="button" type="button" value="subscribe">
-				</div>
-				<div class="righttop">
-					<div class="number">
-						Contact Us:9988998899
-					</div>	
-				</div>
-				<div class="clearer">
-				</div>
-				
-			</div>
-			<div class="middlefoot">
-				<div class="leftmiddle">
-					<div class="col">
-						<h1>About Avon</h1>
-						<ul>
-							<li>The Company</li>
-							<li>Beauty for a Purpose</li>
-							<li>Philanthory</li>
-							<li>Media center press</li>
-							<li>Careers</li>
-							<li>Our Management Team</li>
-							<li>Avon Worldwide</li>
-						</ul>
-					</div>
-					<div class="col">
-						<h1>How to Buy</h1>
-						<ul>
-							<li>The Company</li>
-							<li>Beauty for a Purpose</li>
-							<li>Philanthory</li>
-							<li>Media center press</li>
-							<li>Careers</li>
-							<li>Our Management Team</li>
-							<li>Avon Worldwide</li>
-						</ul>
-					</div>
-					<div class="col">
-						<h1>Others</h1>
-						<ul>
-							<li>The Company</li>
-							<li>Beauty for a Purpose</li>
-							<li>Philanthory</li>
-							<li>Media center press</li>
-							<li>Careers</li>
-							<li>Our Management Team</li>
-							<li>Avon Worldwide</li>
-						</ul>
-					</div>
-					<div class="clearer">
-					</div>
-				</div>
-				<div class="rightmiddle">
-					<input class="find"type="text" placeholder="Find a Representative"><br>
-					<input class="find become"type="text" placeholder="Become a Representative">
-					
-				</div>
-				<div class="clearer">
-				</div>
-			</div>
-			<div class="bottomfoot">
-				<div class="leftfoot">
-				<div>&copy 2016, AVON Beauty Products India Pvt Ltd</div>
-				<div>Terms and conditions</div>
-				<div>Privacy and Policy</div>
+		}
+
+		.subscribe {
+			float: left;
+			margin-left: 15px;
+			width: 10%;
+			/* border: 1px solid red; */
+		}
+
+		.number {
+			float: left;
+			width: 35%;
+			padding: 7px 30px 7px;
+			/* border: 1px solid red; */
+			text-align: right;
+			border-right: 1px solid gray;
+			font-size: 18px;
+		}
+
+		.number strong {
+			font-weight: bold;
+		}
+
+		.logo-icon {
+			float: left;
+			width: 15%;
+			padding: 0 0 0 30px;
+			/* border: 1px solid red; */
+			font-size: 5px;
+		}
+
+		.logo-icon img {
+			margin: 0 2px;
+			/* width: 15%; */
+			/* height: 15%; */
+
+		}
+
+		.clearer {
+			clear: both;
+		}
+
+
+		.middlefoot {
+			display: flex;
+			align-items: center;
+			/* border: 1px solid green; */
+			margin: 30px auto;
+			width: 80%;
+		}
+
+		.leftmiddle {
+			/* border: 1px solid black; */
+			float: left;
+			width: 75%;
+		}
+
+		.col {
+			padding: 0 20px;
+			float: left;
+			width: 33.33%;
+			/* border: 1px solid salmon; */
+		}
+
+		.col a {
+			display: block;
+			text-decoration: none;
+			color: black;
+			padding: 5px 0;
+			font-size: 16px;
+		}
+
+		.col h1 {
+			padding: 5px 0;
+			font-weight: bold;
+			font-size: 17px;
+		}
+
+		.rightmiddle {
 			
+			width: 25%;
+			/* border: 1px solid black; */
+			float: left;
+			padding: 10px;
+
+		}
+
+		.rightmiddle button {
+			position: relative;
+			display: flex;
+			align-items: center;
+			border-radius: 5px;
+			outline: none;
+			background-color: white;
+			border: 1px solid black;
+			margin: 10px;
+			width: 100%;
+			padding: 25px 0 25px 25px;
+			font-style: italic;
+			font-weight: bold;
+			/* font-size: 13px; */
+		}
+
+		.rightmiddle img {
+			position: absolute;
+			right: 25px;
+		}
+
+
+
+
+
+
+		.bottomfoot {
+			margin: 40px auto;
+			width: 80%;
+			/* border: 1px solid red; */
+
+		}
+
+		.leftfoot {
+
+			padding: 10px 0;
+			float: left;
+			width: 80%;
+			text-align: center;
+			/* border: 1px solid pink; */
+			display: flex;
+		}
+
+		.rightfoot {
+			padding: 10px 0;
+			float: left;
+			width: 20%;
+			/* border: 1px solid pink; */
+			text-align: right;
+		}
+
+		.pvtltd {
+			margin-left: 20px;
+		}
+
+		.terms,
+		.policy {
+			margin-left: 40px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="maincontainer">
+
+		<div class="topfoot">
+
+			<div class="newsletter">
+				<input type="text" placeholder="Enter your email address to receive our monthly newsletter">
+			</div>
+
+			<div class="subscribe">
+				<input type="button" value="subscribe">
+			</div>
+
+
+			<div class="number">
+				<p>Contact Us:<strong>9988998899</strong></p>
+
+
+			</div>
+
+			<div class="logo-icon">
+				<img src="images/icons8-facebook-26.png" alt="fb">
+				<img src="images/icons8-twitter-32.png" alt="twitter">
+				<img src="images/icons8-home-24.png" alt="home">
+				<img src="images/icons8-password-24.png" alt="pwd">
+			</div>
+
+			<div class="clearer">
+
+			</div>
+
+		</div>
+		<div class="middlefoot">
+			<div class="leftmiddle">
+				<div class="col">
+					<h1>About Avon</h1>
+					<a href="#">The Company</a>
+					<a href="#">Beauty for a Purpose</a>
+					<a href="#">Philanthory</a>
+					<a href="#">Media center press</a>
+					<a href="#">Careers</a>
+					<a href="#">Our Management Team</a>
+					<a href="#">Avon Worldwide</a>
+				</div>
+				<div class="col">
+					<h1>How to Buy</h1>
+					<a href="#">The Company</a>
+					<a href="#">Beauty for a Purpose</a>
+					<a href="#">Philanthory</a>
+					<a href="#">Media center press</a>
+					<a href="#">Careers</a>
+					<a href="#">Our Management Team</a>
+					<a href="#">Avon Worldwide</a>
+				</div>
+				<div class="col">
+					<h1>Others</h1>
+					<a href="#">The Company</a>
+					<a href="#">Beauty for a Purpose</a>
+					<a href="#">Philanthory</a>
+					<a href="#">Media center press</a>
+					<a href="#">Careers</a>
+					<a href="#">Our Management Team</a>
+					<a href="#">Avon Worldwide</a>
+				</div>
+
 				<div class="clearer">
 				</div>
-			</div>	
-				<div class="rightfoot">
-					Avon Globa
-				</div>
+
 			</div>
+
+			<div class="rightmiddle">
+				<button>Find a Representative
+					<img src="images/icons8-home-24.png" alt="">
+				</button>
+				<button>Become a Representative
+					<img src="images/icons8-home-24.png" alt="">
+				</button>
+			</div>
+
 			<div class="clearer">
 			</div>
 		</div>
-		
-	</body>
+		<div class="bottomfoot">
+			<div class="leftfoot">
+				<div class="pvtltd">&copy 2016, AVON Beauty Products India Pvt Ltd</div>
+				<div class="terms">Terms and conditions</div>
+				<div class="policy">Privacy and Policy</div>
+				<div class="clearer">
+				</div>
+			</div>
+			<div class="rightfoot">
+				Avon Globa
+			</div>
+
+			<div class="clearer">
+			</div>
+		</div>
+	</div>
+
+</body>
+
 </html>
