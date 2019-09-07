@@ -1,134 +1,232 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="resetcss/reset.css">
-	</head>
-	<style>
-		*{
-			box-sizing:border-box;
-			margin:0;
-			padding:0;
+
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="resetcss/reset.css">
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+
+		box-sizing: border-box;
+	}
+
+	.parent {
+		padding: 50px 0px;
+		display: flex;
+		margin: auto;
+		width: 70%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.capture {
+		width: 15%;
+	}
+
+	.header-container {
+		background-color: #41BD7B;
+
+		/* border: 1px solid pink; */
+	}
+
+	.menu {
+
+		width: 70%;
+		padding-left: 30px;
+	}
+
+	.menu li {
+		padding: 10px 10px;
+		display: inline-block;
+
+
+	}
+
+	.menu li a {
+		text-decoration: none;
+		color: white;
+		font-size: 18px;
+	}
+
+	.logo-icon {
+		width: 15%;
+
+		justify-content: flex-end;
+		display: flex;
+	}
+
+	.logo-icon img {
+		margin-left: 13px;
+	}
+
+	.clearer {
+		clear: both;
+	}
+
+	section {
+		background-image: url("images/heroman.jpg");
+		background-repeat: no-repeat;
+	}
+
+	.background {
+
+		padding: 150px 0 150px 250px;
+	}
+
+	.background h1 {
+		font-size: 34px;
+		font-weight: bold;
+
+	}
+
+
+	.background p {
+		font-size: 18px;
+		padding: 20px 0 30px 0;
+		line-height: 30px;
+	}
+
+	button a {
+		text-decoration: none;
+		color: black;
+		margin-left: 20px;
+
+		font-size: 16px;
+	}
+
+	button {
+		padding: 15px 45px;
+		margin-right: 30px;
+		background-color: transparent;
+		border: 3px solid black;
+	}
+
+	.menu-toggle button {
+		/* border: 1px solid red; */
+		color: white;
+		padding: 10px 15px;
+		display: none;
+	}
+
+	@media screen and (min-width:320px) and (max-width:768px) {
+
+		body {
+			background-color: yellow;
 		}
+
 		.parent {
-    padding: 50px 0px;
-    display: flex;
-    margin:auto;
-			width:70%;
-    justify-content: center;
-    align-items: center;
-}
-		.capture{
-			
-			width:15%;
-			
+			position: relative;
+			width: 100%;
+			display: flex;
+			padding: 10px;
 		}
-		.header-container{
-			background-color: #41BD7B;
-			
-			border:1px solid pink;
+		.capture {
+			width: 85%;
 		}
-		
 		.menu {
-    
-    width: 70%;
-    padding-left: 30px;
-}
-		
-		.menu li{
-			padding:10px 10px;
-			display:inline-block;
-		
-		
+			margin: 0;
+			padding: 0;
+			display: none; 
+			position: absolute;
+			top: 50px;
+			/* border: 1px solid red; */
+			width: 100%;
+			text-align: center;
 		}
-		.menu li a{
-			text-decoration:none;
-			color:white;
-			font-size:18px;
+
+		.menu li {
+			border: 1px solid white;
+			margin: 0;
+			background-color: #41BD7B;
+			width: 100%;
 		}
-.logo-icon {
-    width: 15%;
-    
-    justify-content: flex-end;
-    display: flex;
-}
-		.logo-icon img{
-			margin-left:13px;
-			}
-		.clearer{
-			clear:both;
+		.logo-icon {
+			display: none;
 		}
-		section {
-			background-image:url("images/heroman.jpg");
-			background-repeat:no-repeat;
+		.menu-toggle {
+			width: 15%;
+			/* border: 1px solid red; */
+		}
+
+		.menu-toggle button {
+			display: block;
+			margin: auto;
+			width: 100%;
+			padding: 2px 5px;
+			border: 1px solid white;
+			font-size: 12px;
+		}
+		section{
+			padding: 20px 0;
 		}
 		.background{
-		
-		padding:150px 0 150px 250px;
+			text-align: center;
+			padding: 0;	
 		}
 		.background h1{
-			font-size:34px;
-			font-weight:bold;
-			
+			padding-top: 30px;
 		}
-		
-		
-		.background p {
-    font-size: 18px;
-    padding: 20px 0 30px 0;
-    line-height: 30px;
-}
-		button a{
-		text-decoration:none;
-		color:black;
-		margin-left:20px;
-		
-		font-size:16px;
+		.background button{
+			margin: 20px auto;
+			width: 80%;
+			display: block;
 		}
-		button{
-		padding: 15px 45px;
-		margin-right:30px;
-		background-color:transparent;
-		border:3px solid black;
-		}
-		
-		
-	</style>
-	<body>
+	}
+</style>
+<body>
 	<header class="header-container">
 		<div class="parent">
 			<div class="capture">
 				<img src="images/logo.png">
 			</div>
-			<ul class="menu">
+			<ul class="menu" id="jsMenu">
 				<li><a href="#">About</a></li>
 				<li><a href="#">Features</a></li>
 				<li><a href="#">Testimonials</a></li>
-				
 			</ul>
 			<div class="logo-icon">
 				<img src="images/facebook.png">
 				<img src="images/twitter.png">
 				<img src="images/google.png">
 			</div>
-			<div class="clearer">
+			<div class="menu-toggle">
+				<button onclick="showMenu()">Menu</button>
 			</div>
 		</div>
-		</header>
-		<section>
-			<div class="background">
-				
-					<h1>TAKES PHOTOS LIKE A PRO.</h1>
-					<p>With only your iphone and capture app you can take stunning image like<br>a professional photographer</p>
-					<button>
-						<img src="images/iphone_app.png">
-						<a href="#">IPHONE APP</a>
-					</button>
-					<button>
-						<img src="images/android_app.png">
-						<a href="#">ANDROID APP</a>
-					</button>
-					
-			</div>
-		</section>
-	</body>
+	</header>
+	<section>
+		<div class="background">
+
+			<h1>TAKES PHOTOS LIKE A PRO.</h1>
+			<p>With only your iphone and capture app you can take stunning image like<br>a professional photographer</p>
+			<button>
+				<img src="images/iphone_app.png">
+				<a href="#">IPHONE APP</a>
+			</button>
+			<button>
+				<img src="images/android_app.png">
+				<a href="#">ANDROID APP</a>
+			</button>
+
+		</div>
+	</section>
+	<script>
+
+		function showMenu() {
+			let x = document.getElementById("jsMenu");
+			if (x.style.display == "none") {
+				x.style.display = "block";
+			}
+			else {
+				x.style.display = "none";
+			}
+		}
+
+	</script>
+
+</body>
+
 </html>
