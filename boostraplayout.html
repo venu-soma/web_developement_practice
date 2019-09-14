@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="resetcss/reset.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<style>
 		*{
@@ -90,26 +91,144 @@
 		background-color:transparent;
 		border:3px solid black;
 		}
+		.col{
+		float:left;
+		width:25%;
+		margin:20px 0;
+		
+		}
+		.facebook{
+		background-color:#F3F3F3;
+		}
+		.text-image{
+			text-align:center;
+			margin:auto;
+			width:80%;
+			
+			
+		}
+		
+		.mobile{
+			width:100%;
+			background-color:white;
+			
+		
+		}
+		.leftside {
+		float:left;
+		width:50%;
+		position:relative;
+		margin:50px 0;
+		
+		}
+		.leftside img{
+		position:absolute;
+		right:40px;
+		}
+		.rightside{
+			float:left;
+			width:50%;
+			margin:50px 0;
+			padding-left:40px;
+			
+			
+			
+		}
+	.heading h1 {
+    padding: 20px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+.heading p {
+    font-size: 21px;
+    line-height: 32px;
+}
+.image-icons {
+    margin: 50px 0;
+    font-weight: bold;
+}
+.heading img {
+    margin-right: 20px;
+}
+		.ipsum{
+			font-size:20px;
+			margin-top:15px;
+			line-height:30px;
+		}
+		
+		.bt {
+    width: 34%;
+    padding: 20px 15px;
+    /* margin-top: 55px; */
+	font-weight:bold;
+}
+		
+		@media screen and (min-width:320px) and (max-width:768px){
+			.menu{
+			
+			position:absolute;
+			top:110px;
+			background-color:green;
+			margin:0;
+			padding:0;
+			width:100%;
+			}
+			.menu li{
+			display:block;
+			text-align:center;
+			border:2px solid white;
+			
+			}
+			.logo-icon{
+			display:none;
+			}
+			.parent{
+			padding:30px 10px;
+			width:100%;
+			margin:0;
+			}
+			.capture{
+			width:80%;
+		
+			}
+			.btn {
+    width: 20%;
+    border:none;
+    margin: 0;
+    padding: 10px 15px;
+	background-color:white;
+	color:green;
+	text-transform:uppercase;
+}
+	
+		}
 		
 		
 	</style>
 	<body>
 	<header class="header-container">
 		<div class="parent">
+		
 			<div class="capture">
 				<img src="images/logo.png">
 			</div>
-			<ul class="menu">
+			<ul class="menu ">
 				<li><a href="#">About</a></li>
 				<li><a href="#">Features</a></li>
 				<li><a href="#">Testimonials</a></li>
 				
 			</ul>
 			<div class="logo-icon">
+			
 				<img src="images/facebook.png">
 				<img src="images/twitter.png">
 				<img src="images/google.png">
 			</div>
+			
+			<button class="btn">
+			menu
+			</button>
+		
 			<div class="clearer">
 			</div>
 		</div>
@@ -129,6 +248,74 @@
 					</button>
 					
 			</div>
+			
+			
 		</section>
+					<div class="clearer">
+			</div>
+		<div class="facebook">
+			<div class="text-image">
+				
+				<div class="col">
+					<img src="images/google_logotext.png">
+				</div>
+                <div class="col">
+					<img src="images/facebook_logotext.png">
+				</div>	
+				<div class="col">
+					<img src="images/yahoo_logo.png">
+				</div>
+				<div class="col">
+					<img src="images/paypal_logo.png">
+				</div>
+				<div class="clearer">
+				</div>
+			</div>
+		</div>
+		<section>
+		<div class="mobile">
+			<div class="leftside">
+				<img src="images/iphone.png">
+			</div>
+			
+			<div class="rightside">
+				<div class="heading">
+					<h1>CAPTURE UNFROGETTABLE<br> MOMENTS</h1>
+				
+						<p>Html5 is the latest technology to the client side following nature<br>
+						Html5 is the latest technology to the client side<br>
+						Html5 is the latest technology to the client side</p>
+					<div class="image-icons">
+					<p><img src="images/camera.png">Euismod ligual ipsum vulputate tellus.</p>
+						
+							<p><img src="images/icon2.png">Morbi non efficitur nibh sit amet est eros.</p>
+						
+						
+							<p><img src="images/icon3.png">Fusce faucibus ante liberonec luctus egestas.</p>
+						
+						
+							<p><img src="images/icon4.png">Quisque pretium malesuada ornare.</p>
+						
+						
+							<p><img src="images/icon5.png">Cras interdum vestibulum dolor.</p>
+						</div>
+						<button class="bt">
+							<span><img src="images/play.png"> ABOUT VIDEO</span>
+						</button>
+						<span>get the app</span>
+						
+					</div>
+					
+			</div>
+			<div class="clearer">
+				</div>
+			
+		</div>
+		
+		</section>
+		
+		
+			
+				
 	</body>
 </html>
