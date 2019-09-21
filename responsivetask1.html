@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="resetcss/reset.css">
+	<style>
+		*{
+		box-sizing:border-box;
+		}
+		.clearer{
+			clear:both;
+			}
+		.main{
+		width:90%;
+		margin:auto;
+		
+		
+		}
+		.child1{
+		background-color:pink;
+		float:left;
+		width:47%;
+		height:100px;
+		
+		margin:10px 5px;
+		}
+		.all{
+		background-color:green;
+		height:150px;
+		margin:10px;
+		}
+		.threerow{
+		float:left;
+		margin:10px 5px;
+		background-color:orange;
+		width:250px;
+		height:200px;
+		}
+		.fourrow{
+		float:left;
+		background-color:red;
+		width:300px;
+		height:150px;
+		margin:15px;
+		}
+		@media screen and (min-width:768px) and (max-width:1023px){
+			.child1{
+			width:100%;
+			text-align:center;
+			}
+			.threerow{
+			width:100%;
+			text-align:center;
+			}
+			.fourrow{
+			text-align:center;
+			width:45%;
+			}
+		}
+		@media screen and (min-width:320px) and (max-width:767px){
+			.child1{
+			width:100%;
+			text-align:center;
+			}
+			.threerow{
+			width:100%;
+			text-align:center;
+			}
+			.fourrow{
+			width:100%;
+			text-align:center;
+			}
+		}
+	</style>
+	</head>
+	<body>
+	<div class="main">
+		<div class="head">
+			<div class="child1">
+			
+			</div>
+			<div class="child1">
+			</div>
+		<div class="clearer">
+		</div>
+		</div>
+		<div class="all">
+		</div>
+		
+		<div class="threerow">
+		venu
+		</div>
+		<div class="threerow">
+		venu
+		</div>
+		<div class="threerow">
+		venu
+		</div>
+		<div class="clearer">
+		</div>
+		
+		<div class="fourrow">
+		</div>
+		<div class="fourrow">
+		</div>
+		<div class="fourrow">
+		</div>
+		<div class="fourrow">
+		</div>
+		<div class="clearer">
+		</div>
+	</div>	
+	</body>
+</html>
