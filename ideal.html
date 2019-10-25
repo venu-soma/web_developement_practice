@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/reset.css">
+	<style>
+		.bg{
+		background-image:url("images/bg3.jfif");
+		height:550px;
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center center;
+		}
+		.menu{
+		float:left;
+		width:33.33%;
+		text-align:center;
+		padding-top:50px;
+		}
+		.menu ul li{
+		margin:0 15px;
+		display:inline-block;
+		}
+		.menu ul li a{
+		font-size:17px;
+		
+		color:black;
+		text-decoration:none;
+		}
+		.col {
+    padding: 0px 232px;
+}
+.menu h2{
+font-size:27px;
+color:#207561;
+}
+.text{
+text-align:center;
+padding-top:150px;
+}
+.clearer{
+clear:both;
+}
+.text h1{
+font-size:40px;
+color:#364D59;
+font-family:arial;
+}
+.text p{
+color:#364D59;
+font-size:16px;
+margin:20px 0;
+}
+.text button {
+    padding: 13px 33px;
+    background-color: #207561;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+.coltwo {
+   /* border: 2px solid red;*/
+    margin-top: 130px;
+}
+.build {
+    height: 300px;
+    width: 50%;
+    float: left;
+   /* border: 2px solid green;*/
+    box-sizing: border-box;
+    padding: 10px 188px;
+}
+.buildleft h1 {
+    font-size: 20px;
+    /* font-weight: bold; */
+    font-family: arial;
+    color: #000000;
+	line-height:1.1;
+	text-transform:uppercase;
+	font-weight:700;
+}
+.buildleft p {
+    font-size: 19px;
+    color: #364D59;
+    line-height: 1.6;
+    margin: 25px 0;
+}
+.arrow {
+    font-size: 13px;
+    color: #207561;
+    text-decoration: none;
+    font-weight: bold;
+}
+.rightparent {
+    width: 330px;
+    height: 350px;
+    background-color: lightblue;
+    position: relative;
+    top: -25px;
+}
+.rightchild {
+    width: 260px;
+    height: 250px;
+    background-color: white;
+    position: absolute;
+    left: 38px;
+    top: 20px;
+    border: 5px solid #207561;
+	padding:40px;
+}
+.rightchild h1 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: arial;
+	line-height:1.2;
+	margin-bottom:30px;
+}
+.year {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #888;
+    font-weight: 700;
+    line-height: 1;
+   display:block;
+    margin-bottom: 30px;
+    
+}
+
+.number:before {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 70px;
+	top:-22px;
+	left:5px;
+    border-radius: 50%;
+    background: rgba(32,117,97,.5);
+}
+.number {
+    font-size: 70px;
+    position: relative;
+    left: 25px;
+    top: 25px;
+    font-weight: 700;
+    font-family: arial;
+}
+.service {
+    width: 624px;
+   /* border: 2px solid pink;*/
+    padding-left: 188px;
+    margin-top: 250px;
+}
+.service h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.service p {
+    font-size: 16px;
+    font-family: arial;
+    line-height: 2.2;
+    color: #364D59;
+	margin-bottom:35px;
+}
+.topimg {
+   /* border: 2px solid red;*/
+    margin-top: 200px;
+}
+
+.leftimg {
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+	/*border:2px solid pink;*/
+	position:relative;
+	}
+.leftimg img {
+    width: 550px;
+	height:378px;
+    margin: 20px;
+}
+img.addimg1 {
+    padding-left: 144px;
+}
+.addtext {
+    position: absolute;
+    width: 366px;
+    height: 250px;
+    background-color: white;
+    text-align: left;
+    padding: 20px;
+   /* border: 3px solid green;*/
+    left: 162px;
+    bottom: -173px;
+}
+.addtext p {
+    color: #B3B3B3;
+    font-size: 16px;
+}
+.addtext h1 {
+    font-size: 28px;
+    line-height: 1.2;
+    padding: 10px 0;
+}
+.bgarrow {
+    margin-top: 30px;
+}
+.addbg {
+    width: 431px;
+    height: 250px;
+    position: absolute;
+    background-color: lightblue;
+    right: 126px;
+    bottom: -198px;
+    z-index: -1;
+}
+.latest {
+    /*border: 2px solid red;*/
+	margin-top:450px;
+	position:relative;
+}
+.latest h1 {
+    padding-left: 150px;
+    font-size: 20px;
+	line-height:1.2;
+}
+a.news {
+    /* float: right; */
+    /* padding-right: 150px; */
+    color: #207561;
+    text-decoration: none;
+    position: absolute;
+    right: 150px;
+    top: 18px;
+	font-size:12px;
+	font-weight:700;
+}
+.middlebg {
+    background-image: url(images/bg5.jfif);
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+   position: relative;
+    background-position: center center;
+	margin-top:100px;
+}
+.interior {
+    /* border: 2px solid red; */
+    width: 527px;
+    padding: 50px;
+    background-color: white;
+    position: absolute;
+    bottom: -258px;
+    left: 418px;
+}
+.interior h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: arial;
+	margin:20px 0;
+}
+.interior p {
+    color: #364D59;
+    font-size: 16px;
+	 font-family: arial;
+	 line-height:1.5;
+	 margin-bottom:40px;
+}
+.earum{
+text-align:center;
+}
+.colon {
+    margin-top: 450px;
+   /* border: 2px solid red;*/
+    width: 637px;
+	text-align:center;
+	display:inline-block;
+	
+}
+.colon img {
+    width: 26px;
+    height: 19px;
+}
+.colon p {
+    font-size: 24px;
+    color: #364D59;
+    /* width: 300px; */
+    /* border: 2px solid red; */
+    font-family: arial;
+	line-height:1.6;
+	padding:40px 0;
+}
+.ceo{
+color:#6C757D;
+font-style:italic;
+font-size:18px;
+font-family:arial;
+}
+
+.blog {
+    width: 621px;
+   /* border: 2px solid red;*/
+    margin-top: 250px;
+	padding-left:180px;
+}
+.blog h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.blog p {
+    font-size: 16px;
+    font-family: arial;
+    padding: 30px 0;
+    line-height: 1.5;
+}
+.fourimg {
+   /* border: 2px solid red;*/
+    padding: 10px 164px;
+}
+.imgone {
+    width: 23%;
+    display: inline-block;
+   /* border: 2px solid green;*/
+    box-sizing: border-box;
+    margin-right: 19px;
+}
+.imgone img {
+    width: 250px;
+    height: 216px;
+}
+.imgtext {
+   
+   /* border: 2px solid yellow;*/
+    width: 200px;
+	padding-left:20px;
+}
+.imgtext p {
+    font-size: 18px;
+    color: #B3B3B3;
+    padding-top: 20px;
+}
+.imgtext h1 {
+    font-size: 18px;
+    font-family: arial;
+    text-transform: uppercase;
+    padding: 30px 0px;
+}
+.imgtext a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #207561;
+    text-decoration: none;
+}
+.imgone:hover{
+box-shadow:20px 20px lightblue;
+}
+
+
+
+
+.topfoot {
+    margin-top: 145px;
+    /*border: 2px solid red;*/
+    
+    padding: 10px 215px;
+}
+.about {
+    float: left;
+    width: 28.3%;
+   
+}
+.feature{
+padding-left:150px;
+}
+.about h2 {
+    font-size: 16px;
+    
+    font-family: arial;
+	margin-bottom:30px;
+}
+.about p {
+    line-height: 1.5;
+    font-family: arial;
+    font-size: 16px;
+    color: #808080;
+}
+.about ul li{
+padding-bottom:20px;}
+.about ul li a {
+    text-decoration: none;
+    padding-bottom: -16px;
+    font-size: 16px;
+    color: rgba(0,0,0,0.5);
+}
+input[type="text"] {
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid green;
+    outline: none;
+}
+.about button {
+    padding: 18px;
+    border-radius: 3px;
+    border: 1px solid green;
+    outline: none;
+    background-color: green;
+    color: white;
+}
+.logo {
+    float: left;
+}
+.logo img {
+    margin-right: 18px;
+    margin-top: 15px;
+}
+.bottomfoot {
+    text-align: center;
+    margin: 250px 0;
+    color: #808080;
+    font-size: 16px;
+}
+
+
+	</style>	
+	</head>
+	<body>
+		<div class="bg">
+			<div class="col">
+				<div class="menu">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Project</a></li>
+						<li><a href="#">Services</a></li>
+					</ul>
+				</div>
+				<div class="menu">
+					<h2 >Ideal</h2>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>	
+				<div class="clearer">
+				</div>
+			<div class="text">
+				<h1>Welcome to <span style="color:#207561;">Ideal</span></h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<button>Get A Quote</button>
+			</div>
+		</div>
+		<div class="coltwo">
+			<div class="build">
+				<div class="buildleft">
+					<h1>We Create Building, and Interior Design That Enhance The Human Experience</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, consequuntur, harum? Culpa, iure vel fugiat veritatis obcaecati architecto.</p>
+					<div><a class="arrow" href="#">MORE ABOUT US &rarr;</a></div>
+				</div>	
+			
+			
+			</div>
+			
+			<div class="build">
+				<div class="rightparent">
+					<div class="rightchild">
+						<h1>The Best In Interior Design</h1>
+						<span class="year">years<br>
+						of experience
+						</span>
+						<div class="number">
+							75
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearer">
+			</div>
+		</div>
+		<div class="service">
+			<h1>OUR FEATURED<br> SERVICES</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quos veniam magni totam, architecto earum dolor id obcaecati!</p>
+			<div><a class="arrow" href="#">LEARN MORE &rarr;</a></div>
+		</div>
+		<div class="topimg">
+			<div class="leftimg">
+				<div class="addimg">
+					<img class="addimg1" src="images/img6.jpg">
+				</div>
+				<div class="addtext">
+					<p>Architecture</p>
+					<h1>SED UT PERSPICIATIS UNDE THIS</h1>
+					<div class="bgarrow"><a class="arrow" href="#">LEARN MORE &rarr;</a></div>
+				</div>
+				<div class="addbg">
+				</div>
+				
+			</div>
+			
+			
+			
+			<div class="leftimg">
+				
+				<div class="addimg">
+					<img class="addimg1" src="images/bg2.jfif">
+				</div>
+				<div class="addtext">
+					<p>Gym&Arena</p>
+					<h1>CURABITUR BIBENDUM</h1>
+					<div class="bgarrow"><a class="arrow" href="#">LEARN MORE &rarr;</a></div>
+				</div>
+				<div class="addbg">
+				</div>
+				
+			</div>
+			</div>
+			
+		</div>
+		
+		
+		
+		<div class="topimg downside">
+			<div class="leftimg">
+				<div class="addimg">
+					<img class="addimg1" src="images/img7.jpg">
+				</div>
+				<div class="addtext">
+					<p>Interioe Design</p>
+					<h1>Obcaecati Architecto</h1>
+					<div class="bgarrow"><a class="arrow" href="#">LEARN MORE &rarr;</a></div>
+				</div>
+				<div class="addbg">
+				</div>
+				
+			</div>
+			
+			
+			
+			<div class="leftimg">
+				
+				<div class="addimg">
+					<img class="addimg1" src="images/img6.jpg">
+				</div>
+				<div class="addtext">
+					<p>Product Design</p>
+					<h1>QUISQUE NON AUGUE</h1>
+					<div class="bgarrow"><a class="arrow" href="#">LEARN MORE &rarr;</a></div>
+				</div>
+				<div class="addbg">
+				</div>
+				
+			</div>
+			</div>
+			
+		</div>
+		
+		<div class="latest">
+			<h1>LATEST <br>PROJECTS</h1>
+			<a class="news" href="#">VIEW ALL PROJECTS &rarr;</a>
+			<div class="clearer">
+			</div>
+		</div>
+		<div class="middlebg">
+			<div class="interior">
+				<h4>Interior Design</h4>
+				<h1>Obcaecati Architecto</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non libero blanditiis dignissimos natus, necessitatibus consequatur vel alias delectus!</p>
+				<a class="arrow" href="#">VIEW THIS PROJECTS &rarr;</a>
+			</div>
+		</div>
+		<div class="earum">
+			<div class="colon">
+				<img src="images/bg6.png">
+				<p>Eligendi earum ad perferendis dolores, dolor quas. Ullam in, eaque mollitia suscipit id aspernatur rerum! Sit quibusdam ullam tempora quis, in voluptatum maiores veritatis recusandae!</p>
+				<span style="font-style:italic; font-size:18px;">James Smith</span>-<span class="ceo">CEO and Co-Founder</span>
+			</div>
+		</div>
+		<div class="blog">
+			<h1>BLOG AND UPDATES</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quos veniam magni totam, architecto earum dolor id obcaecati!</p>
+		</div>
+		<div class="fourimg">
+			<div class="imgone">
+				<img src="images/img6.jpg">
+				<div class="imgtext">
+					<p>July 17, 2019</p>
+					<h1>Iusto quos veniam magni totam</h1>
+					<a href="#">Continue Reading &rarr;</a>
+				</div>
+			</div>	
+			<div class="imgone">
+				<img src="images/img6.jpg">
+				<div class="imgtext">
+					<p>July 17, 2019</p>
+					<h1>Iusto quos veniam magni totam</h1>
+					<a href="#">Continue Reading &rarr;</a>
+				</div>
+			</div>
+			<div class="imgone">			
+				<img src="images/img6.jpg">
+				<div class="imgtext">
+					<p>July 17, 2019</p>
+					<h1>Iusto quos veniam magni totam</h1>
+					<a href="#">Continue Reading &rarr;</a>
+				</div>
+			</div>
+			<div class="imgone">	
+				<img src="images/img6.jpg">
+				<div class="imgtext">
+					<p>July 17, 2019</p>
+					<h1>Iusto quos veniam magni totam</h1>
+					<a href="#">Continue Reading &rarr;</a>
+				</div>
+			</div>	
+		</div>
+		
+		
+		<div class="topfoot">
+			<div class="about">
+				<h2>About Us</h2>
+				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+			</div>
+			<div class="about feature">
+				<h2>Feature</h2>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Testimonials</a></li>
+					<li><a href="#">Terms of Service</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="about">
+				<h2>Subscribe to Newsletter</h2>
+				<p><input type="text" name="" placeholder="Enter Email"> <button>Subscribe</button></p> 
+				<p style="margin-top:30px;">Follow Us</p>
+				
+					<div class="logo">
+					<img src="images/icons8-facebook-26.png">
+					</div>
+					<div class="logo">
+					<img src="images/icons8-twitter-32.png">
+					</div>
+					<div class="logo">
+					<img src="images/camera.png">
+					</div>
+					<div class="logo">
+					<img src="images/icon5.png">
+					</div>
+					
+				</div>	
+				<div class="clearer">
+				</div>
+			</div>
+			
+		</div>
+		<div class="bottomfoot">
+			
+
+		Copyright ©  All rights reserved | This template is made with by Colorlib
+		</div>
+	</body>
+</html>
+	
